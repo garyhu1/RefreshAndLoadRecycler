@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">RefreshRecyclerView</string>
+    <string name="app_name">WZMRecyclerView</string>
+    <string name="action_settings">Settings</string>
 </resources>
