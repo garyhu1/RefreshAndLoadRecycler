@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.garyhu.refreshrecyclerview.R;
+import com.garyhu.refreshrecyclerview.utils.ImgDataUtil;
 import com.mrw.wzmrecyclerview.Divider.BaseItemDecoration;
 import com.mrw.wzmrecyclerview.HeaderAndFooter.OnItemClickListener;
 import com.mrw.wzmrecyclerview.HeaderAndFooter.OnItemLongClickListener;

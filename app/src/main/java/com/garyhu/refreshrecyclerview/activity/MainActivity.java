@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.garyhu.refreshrecyclerview.R;
+
 public class MainActivity extends AppCompatActivity {
 
 

@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.garyhu.refreshrecyclerview.R;
+import com.garyhu.refreshrecyclerview.utils.ImgDataUtil;
 import com.mrw.wzmrecyclerview.AutoLoad.AutoLoadRecyclerView;
 import com.mrw.wzmrecyclerview.Divider.BaseItemDecoration;
 import com.mrw.wzmrecyclerview.HeaderAndFooter.OnItemClickListener;
@@ -53,7 +55,7 @@ public class AutoLoadActivity extends AppCompatActivity {
         rcv.setAdapter(new SimpleAdapter<String>(this, imgs, R.layout.item_test) {
             @Override
             protected void onBindViewHolder(ViewHolder holder, String data) {
-                Glide.with(mContext).load(data).diskCacheStrategy(DiskCacheStrategy.ALL).placeholder(R.color.gray).into(holder.<ImageView>getView(R.id.iv));
+                Glide.with(mContext).load(data).diskCacheStrategy(DiskCacheStrategy.ALL).placeholder(R.mipmap.ic_launcher).into(holder.<ImageView>getView(R.id.iv));
             }
         });
 //        设置刷新监听
