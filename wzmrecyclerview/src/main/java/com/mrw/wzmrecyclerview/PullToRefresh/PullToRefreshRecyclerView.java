@@ -45,7 +45,7 @@ public class PullToRefreshRecyclerView extends HeaderAndFooterRecyclerView {
     //    刷新中
     public final static int STATE_REFRESHING = 3;
 
-    private float mPullRatio = 0.5f;
+    private float mPullRatio = 0.5f;//阻尼系数
 
 //   位于刷新View顶部的view，通过改变其高度来下拉
     private View topView;
@@ -143,7 +143,7 @@ public class PullToRefreshRecyclerView extends HeaderAndFooterRecyclerView {
         return super.onTouchEvent(e);
     }
 
-    /***
+    /**
      * 判断是否滑动到了顶部
      */
     private boolean isTop() {

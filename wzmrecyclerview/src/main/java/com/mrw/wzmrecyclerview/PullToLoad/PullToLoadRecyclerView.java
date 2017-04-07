@@ -160,7 +160,7 @@ public class PullToLoadRecyclerView extends PullToRefreshRecyclerView {
                         break;
                 }
                 float distance = (int) ((mFirstY - e.getRawY())* mLoadRatio);
-//                若向上滑动(此时加载胃部已隐藏)，不处理
+//                若向下滑动(此时加载胃部已隐藏)，不处理
                 if (distance < 0) break;
                 mPulling = true;
 //                若加载中，距离需加上尾部的高度
